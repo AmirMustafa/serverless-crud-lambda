@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "d27c10c4-311c-46e9-b2d9-1075b8850603",
+		"name": "Serverless CRUD Lambda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rlzwv202c6.execute-api.ap-south-1.amazonaws.com/prod/",
+					"protocol": "https",
+					"host": [
+						"rlzwv202c6",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\": \"100\",\n    \"productName\": \"Oximeter\",\n    \"price\": 150,\n    \"color\": \"white\",\n    \"inventory\": 1000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rlzwv202c6.execute-api.ap-south-1.amazonaws.com/prod/product",
+					"protocol": "https",
+					"host": [
+						"rlzwv202c6",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET All Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\": \"100\",\n    \"productName\": \"Oximeter\",\n    \"price\": 150,\n    \"color\": \"white\",\n    \"inventory\": 1000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rlzwv202c6.execute-api.ap-south-1.amazonaws.com/prod/products",
+					"protocol": "https",
+					"host": [
+						"rlzwv202c6",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Specific Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\": \"100\",\n    \"productName\": \"Oximeter\",\n    \"price\": 150,\n    \"color\": \"white\",\n    \"inventory\": 1000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rlzwv202c6.execute-api.ap-south-1.amazonaws.com/prod/products",
+					"protocol": "https",
+					"host": [
+						"rlzwv202c6",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\": \"100\",\n    \"productName\": \"Oximeter\",\n    \"price\": 150,\n    \"color\": \"white\",\n    \"inventory\": 1000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rlzwv202c6.execute-api.ap-south-1.amazonaws.com/prod/products",
+					"protocol": "https",
+					"host": [
+						"rlzwv202c6",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productId\": \"103\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rlzwv202c6.execute-api.ap-south-1.amazonaws.com/prod/product",
+					"protocol": "https",
+					"host": [
+						"rlzwv202c6",
+						"execute-api",
+						"ap-south-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
