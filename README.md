@@ -12,4 +12,4 @@ Lambda, API Gateway, DynamoDB
 - Postman to exceute each APIs
 
 ## Screenshot
-<img src='https://user-images.githubusercontent.com/15896579/81357943-aac8e780-90f2-11ea-9c96-c9b8ba8b7aba.png' alt=""/>
+<img src='https://user-images.githubusercontent.com/15896579/146601715-8320178c-f30c-4f9f-bf53-6fb9b44ef8e1.png' alt=""/>
